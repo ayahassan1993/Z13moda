@@ -1,0 +1,51 @@
+.site_header{
+    .top_header{
+        padding: 1rem 0;
+        background: #f9f9f9;
+        border-bottom: 1px solid #eee;
+        a{
+            color: $tc;
+        }
+        .top_social_links{
+            li{
+                padding-right: 1rem;
+                border-right: 2px solid #ccc;
+                display: inline-block;
+                text-align: center;
+                &:last-child{
+                    border-right:0px;
+                }
+            }
+        }
+    }
+    .bottom_header{
+        background: $bc;
+        .navbar-brand{
+            img{
+                max-height:70px;
+            }
+        }
+        .dropdown{
+            animation-duration: .4s;
+            padding: 0;
+            .dropdown-item{
+                font-size: 14px;
+                &:hover{
+                    background: transparent;
+                    text-decoration: underline;
+                }
+            }
+            &.mega_menu{
+                position: inherit;
+                .dropdown-menu{
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .header-scroll_bg_light{
+        position: fixed;
+        width:100%;
+        left: 0;
+    }
+}

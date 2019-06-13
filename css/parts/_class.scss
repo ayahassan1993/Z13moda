@@ -1,0 +1,59 @@
+/*---------- General Classes -------------*/
+.margin_top{
+  margin-top: $margin-two;
+}
+.margin_bottom{
+  margin-bottom: $margin-two;
+}
+.margin_top_4{
+  margin-top: 4rem;
+}
+.margin_bottom_4{
+  margin-bottom: 4rem;
+}
+.margin_right{
+  margin-right: 1rem;
+}
+.padding_top{
+  padding-top: $padding-two;
+}
+.padding_bottom{
+  padding-bottom: $padding-two;
+}
+._bold{
+  font-family: $font-family-bold;
+}
+.section_tit{
+  span{
+    position: relative;
+    padding-bottom: 1rem;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 20%;
+      background: $tc;
+    }
+  }
+}
+.darkred{
+  color: $pintrest
+}
+.blue{
+  color: $blue;
+}
+.btn_style{
+  padding: .5rem 2rem;
+  display: inline-block;
+  font-weight:bold;
+  @include trans(.3s);
+}
+.dark_btn{
+  border: 2px solid #000;
+  &:hover{
+    background: #000;
+    color: $bc;
+  }
+}
