@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="description" content=""/>
       <meta name="author" content=""/>
-      <title>About</title>
+      <title>Profile</title>
       <!-- css plugins-->
       <link href="css/inc/plugins.css" rel="stylesheet"/>
       <!-- css stylesheet-->
@@ -78,61 +78,159 @@
       <main class="site_main">
         <section class="top_sec">
           <div class="container">
-            <h2 class="section_tit margin_bottom"><span>About Store</span></h2>
+            <h2 class="section_tit margin_bottom"><span>My Profile</span></h2>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">About Store</a></li>
+                <li class="breadcrumb-item"><a href="#">My Profile</a></li>
               </ol>
             </nav>
           </div>
         </section>
-        <section class="ourStory pb-0">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6"><img class="w-100" src="img/about.jpg" alt="pic"/></div>
-              <div class="col-md-6">
-                <h2 class="section_tit margin_bottom"><span>Our Story</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud commodo consequat sit voluptatem accusantium doloremque laudantium.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud commodo consequat sit voluptatem accusantium doloremque laudantium.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="aboutUs pb-0">
-          <div class="container">
-            <h2 class="section_tit margin_bottom"><span>About Store</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud commodo consequat sit voluptatem accusantium doloremque laudantium.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </section>
-        <section class="services">
+        <section class="myprofile">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/delivery.png" alt="pic"/>
-                  <h3 class="font-weight-bold">Free Delivery</h3>
-                </div>
+              <div class="col-sm-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"><a class="nav-link active" id="v-pills-myOrders-tab" data-toggle="pill" href="#v-pills-myOrders" role="tab" aria-controls="v-pills-myOrders" aria-selected="true">My Orders</a><a class="nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab" aria-controls="v-pills-address" aria-selected="true">Shipping Address</a><a class="nav-link" id="v-pills-setting-tab" data-toggle="pill" href="#v-pills-setting" role="tab" aria-controls="v-pills-setting" aria-selected="true">Account Setting</a></div>
               </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/refun.png" alt="pic"/>
-                  <h3 class="font-weight-bold">40 Days Return</h3>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/return.png" alt="pic"/>
-                  <h3 class="font-weight-bold">Free Returns</h3>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/support.png" alt="alt"/>
-                  <h3 class="font-weight-bold">24 Hours Support</h3>
+              <div class="col-sm-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-myOrders" role="tabpanel" aria-labelledby="v-pills-myOrders-tab"> 
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th> Order ID</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>1</th>
+                            <th>E873N5</th>
+                            <th>3/2/2019</th>
+                            <th>200$</th>
+                            <th class="text-success">Arrived</th>
+                          </tr>
+                          <tr>
+                            <th>2</th>
+                            <th>E873N5</th>
+                            <th>3/2/2019</th>
+                            <th>150$</th>
+                            <th class="text-primary">Shipped </th>
+                          </tr>
+                          <tr>
+                            <th>3</th>
+                            <th>E873N5</th>
+                            <th>3/2/2019</th>
+                            <th>125$</th>
+                            <th class="text-warning">Pending</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab"> 
+                    <div class="d-flex justify-content-between align-items-start">
+                      <h3 class="font-weight-bold mt-0">My Addresses</h3>
+                      <button class="btn_style solid_btn" type="button" data-toggle="modal" data-target="#addAdress">Add New Adress</button>
+                    </div>
+                    <div class="card mt-3">
+                      <div class="card-body">
+                        <h3 class="card-title mt-0">Aya Hassan</h3>
+                        <div class="card-text d-flex justify-content-between align-items-Center">
+                          <div>
+                            <p class="mt-0 mb-0">Miami</p>
+                            <p class="mt-0 mb-0">Alexandria, Egypt</p>
+                            <p class="mt-0 mb-0">201276734587</p>
+                          </div>
+                          <button class="btn_style btn-primary" type="button" data-toggle="modal" data-target="#addAdress">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-setting" role="tabpanel" aria-labelledby="v-pills-setting-tab"> 
+                    <h3 class="font-weight-bold mt-0">Account Setting</h3>
+                    <hr/>
+                    <form action="#">
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" placeholder="First Name"/>
+                        </div>
+                        <div class="col">
+                          <input type="text" placeholder="Last Name"/>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" placeholder="Mobile"/>
+                        </div>
+                        <div class="col">
+                          <input type="text" placeholder="Phone"/>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <div class="modal fade" id="addAdress" tabindex="-1" role="dialog" aria-labelledby="addAdressTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Add New Adress</h3>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <form action="#">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" placeholder="First Name"/>
+                    </div>
+                    <div class="col">
+                      <input type="text" placeholder="Last Name"/>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <select>
+                        <option selected="selected">Country</option>
+                        <option value="">Egypt</option>
+                        <option value="">Dunai</option>
+                        <option value="">Iraq</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select>
+                        <option selected="selected">City</option>
+                        <option value="">Alexandria</option>
+                        <option value="">Cairo</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12">
+                      <input type="text" placeholder="Street Name"/>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" placeholder="Mobile"/>
+                    </div>
+                    <div class="col">
+                      <input type="text" placeholder="Phone"/>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="site_footer bg-light">
         <div class="container">

@@ -143,47 +143,19 @@ $(document).ready(function() {
 		$('.navbar-toggler svg').toggleClass('fa-times').toggleClass('fa-align-right');
 	});
 // ====== wish list =============
-$('.wish_list').on('click',function(e){
+$('.product .wish_list').on('click',function(e){
 	e.preventDefault();
-	var attr_val = $(this).find('svg').attr('data-prefix')
-	if(attr_val == 'far') $(this).find('svg').attr('data-prefix','fas')
-	else $(this).find('svg').attr('data-prefix','far')
+	var attr_val = $(this).find('svg').attr('data-prefix');
+	if(attr_val == 'far') 
+		{
+			$(this).find('svg').attr('data-prefix','fas');
+		}
+	else 
+		{
+			$(this).find('svg').attr('data-prefix','far');
+		}
 	$(this).toggleClass('bounceIn');
 })
-
-// ======= quantity ==============
-jQuery('<div class="quantity-nav"><div class="quantity-button quantity-down">-</div><div class="quantity-button quantity-up">+</div></div>').insertAfter('.quantity input');
-    jQuery('.quantity').each(function() {
-      var spinner = jQuery(this),
-        input = spinner.find('input[type="number"]'),
-        btnUp = spinner.find('.quantity-up'),
-        btnDown = spinner.find('.quantity-down'),
-        min = input.attr('min'),
-        max = input.attr('max');
-
-      btnUp.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue >= max) {
-          var newVal = oldValue;
-        } else {
-          var newVal = oldValue + 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-      });
-
-      btnDown.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue <= min) {
-          var newVal = oldValue;
-        } else {
-          var newVal = oldValue - 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-      });
-
-    });
 
 		// ======rate===========
 		(function($) {
@@ -202,3 +174,20 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-down">-</
 				/*TODO*/
   		});
 		})(jQuery); 
+		// show password 
+		$('.show_pass').on('click',function(e){
+			e.preventDefault();
+			var _attr = $('#login-pass').attr('type');
+			if(_attr == "password"){
+				$('#login-pass').attr('type',"text");
+			}
+			else{
+				$('#login-pass').attr('type',"password");
+			}
+		});
+	/* ==== help accordion ======*/
+		$('.help .card button').on('click',function(){
+			$('.help .card button').removeClass("active");
+			$('.help .card .collapse').removeClass("show");
+			$(this).addClass("active");
+		});

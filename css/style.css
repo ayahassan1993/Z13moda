@@ -193,12 +193,16 @@ input {
   border: 0;
   outline: 0;
   background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.2);
 }
 
 textarea {
   resize: none;
-  padding: 0.5rem 1rem;
-  height: 84px;
+  height: 120px;
+  padding: 1rem;
+  outline: 0;
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.2);
 }
 
 p, h1, h2, h3, form {
@@ -254,6 +258,10 @@ section {
 
 .padding_bottom {
   padding-bottom: 2rem;
+}
+
+.vm {
+  vertical-align: middle;
 }
 
 ._bold {
@@ -799,37 +807,6 @@ section {
   min-width: 50%;
 }
 
-.product_page .product_body .quantity {
-  display: inline-block;
-  position: relative;
-  width: 135px;
-}
-
-.product_page .product_body .quantity input {
-  border: 1px solid rgba(17, 17, 17, 0.2);
-  width: 100%;
-  text-align: center;
-  line-height: 42px;
-  padding: 0 1rem 0 1.6rem;
-}
-
-.product_page .product_body .quantity .quantity-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-flex;
-  height: 42px;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.product_page .product_body .quantity .quantity-nav .quantity-button.quantity-up, .product_page .product_body .quantity .quantity-nav .quantity-button.quantity-down {
-  border: 1px solid rgba(17, 17, 17, 0.2);
-  cursor: pointer;
-  padding: 0 1rem;
-  line-height: 42px;
-}
-
 .description #myTab {
   padding-bottom: 1rem;
   font-weight: bold;
@@ -894,6 +871,228 @@ section {
 
 .description .media .rate span {
   vertical-align: top;
+}
+
+/* ======== login page ============ */
+.login .login_form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #eee;
+}
+
+.login .login_form h3 {
+  margin-bottom: 1rem;
+}
+
+.login .login_form a {
+  text-decoration: underline;
+}
+
+/* ========== mybag ============ */
+.mybag .table th {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.mybag .table tr {
+  border-bottom: 1px solid #e9ecef;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mybag .table img {
+  max-width: 40px;
+  height: auto;
+  margin-right: .5rem;
+}
+
+.mybag .quantity {
+  text-align: center;
+}
+
+.mybag .quantity input {
+  width: 55px;
+  text-align: center;
+}
+
+.mybag .coupon {
+  align-items: stretch;
+}
+
+.mybag .coupon input {
+  height: auto;
+  width: 60%;
+}
+
+.mybag .coupon button {
+  width: 40%;
+}
+
+/* ======= checkout page ========= */
+.checkout .input-row {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.checkout .input-row ._icon {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  left: 0;
+  padding: .5rem .5rem;
+  border-right: 1px solid rgba(17, 17, 17, 0.2);
+  color: #6d6d6d;
+}
+
+.checkout .input-row input, .checkout .input-row select {
+  padding-left: 3rem;
+}
+
+.checkout .icon-container {
+  font-size: 2rem;
+}
+
+.checkout .modal-dialog {
+  max-width: 300px;
+  margin-right: 0;
+}
+
+/* === Help === */
+.help .accordion .card {
+  border: 0;
+  box-shadow: 0 0 5px #eee;
+  margin-bottom: 1rem;
+}
+
+.help .accordion .card .card-body {
+  background: #fff;
+}
+
+.help .accordion .card .card-body p {
+  margin: 0;
+}
+
+.help .accordion .card .card-header {
+  padding: 0;
+  border: 0;
+}
+
+.help .accordion .card .card-header button {
+  width: 100%;
+  text-align: left;
+  color: #848484;
+  font-weight: bold;
+  padding: 1rem;
+  background: #fff;
+  border: 0;
+  text-decoration: none;
+}
+
+.help .accordion .card .card-header button:hover {
+  text-decoration: none;
+}
+
+.help .accordion .card .card-header button.active {
+  color: #3591dc;
+}
+
+/* ------- my profile page ---------- */
+.myprofile #v-pills-tab .nav-link {
+  border-radius: 0;
+  border: solid #eee;
+  border-width: 2px 2px 0;
+}
+
+.myprofile #v-pills-tab .nav-link.active {
+  border: 0;
+}
+
+.myprofile #v-pills-tab .nav-link:last-child {
+  border-width: 2px;
+}
+
+.myprofile .tab-pane input, .myprofile .tab-pane select {
+  width: 100%;
+}
+
+.myprofile .tab-pane .form-row {
+  margin-bottom: 1rem;
+}
+
+.myprofile .table {
+  border: 2px solid #eee;
+}
+
+.myprofile .table thead {
+  background: #eee;
+}
+
+.myprofile .table thead th {
+  border-right: 1px inset #fff;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.myprofile .table tbody th {
+  border-right: 1px inset #eee;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.myprofile .card .card-title {
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.myprofile .card .card-title:before {
+  content: "";
+  width: 40px;
+  background: #585858;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#addAdress input, #addAdress select {
+  width: 100%;
+}
+
+#addAdress .form-row {
+  margin-bottom: 1rem;
+}
+
+/*-======= contact us page ==============*/
+.contactUs .bg_contact {
+  background: url(../img/contact.jpg);
+  background-size: cover;
+  background-position: top center;
+  -webkit-transform: translate(2rem, 0);
+  -moz-transform: translate(2rem, 0);
+  -o-transform: translate(2rem, 0);
+  transform: translate(2rem, 0);
+  z-index: 1;
+  position: relative;
+}
+
+.contactUs .info {
+  padding: 2rem 2rem 2rem 3rem;
+  border: 2px solid #eee;
+}
+
+.contactUs .contact-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contactUs .contact-form .form-row {
+  margin-bottom: 1rem;
+}
+
+.contactUs .contact-form .form-row input, .contactUs .contact-form .form-row textarea {
+  width: 100%;
 }
 
 .site_footer {

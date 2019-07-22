@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="description" content=""/>
       <meta name="author" content=""/>
-      <title>About</title>
+      <title>Wishlist</title>
       <!-- css plugins-->
       <link href="css/inc/plugins.css" rel="stylesheet"/>
       <!-- css stylesheet-->
@@ -78,58 +78,89 @@
       <main class="site_main">
         <section class="top_sec">
           <div class="container">
-            <h2 class="section_tit margin_bottom"><span>About Store</span></h2>
+            <h2 class="section_tit margin_bottom"><span>My Wishlist</span></h2>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">About Store</a></li>
+                <li class="breadcrumb-item"><a href="#">Wishlist</a></li>
               </ol>
             </nav>
           </div>
         </section>
-        <section class="ourStory pb-0">
+        <section class="mybag">
           <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6"><img class="w-100" src="img/about.jpg" alt="pic"/></div>
-              <div class="col-md-6">
-                <h2 class="section_tit margin_bottom"><span>Our Story</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud commodo consequat sit voluptatem accusantium doloremque laudantium.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud commodo consequat sit voluptatem accusantium doloremque laudantium.</p>
-              </div>
-            </div>
+            <table class="table">
+              <thead>
+                <tr> 
+                  <th class="col-4 text-secondary font-weight-bold">Product Name</th>
+                  <th class="col-2 text-center text-secondary font-weight-bold">Unit Price</th>
+                  <th class="col-2 text-center text-secondary font-weight-bold">Qty</th>
+                  <th class="col-2 text-center text-secondary font-weight-bold">Add To Card</th>
+                  <th class="col-2 text-right text-secondary font-weight-bold">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <th class="d-inline-flex align-items-center col-4"><img src="img/product1.jpg" alt="pic"/>
+                    <p class="font-weight-bold">Product Name</p>
+                  </th>
+                  <th class="col-2 text-center">20$</th>
+                  <th class="col-2 text-center"> 
+                    <div class="quantity">
+                      <input type="text" value="1"/>
+                    </div>
+                  </th>
+                  <th class="col-2 text-center"> <a class="btn_style solid_btn" href="#"> <small>Add To Card</small></a></th>
+                  <th class="col-2 text-right"> <a href="#"><i class="fas fa-trash-alt"></i></a></th>
+                </tr>
+                <tr> 
+                  <th class="d-inline-flex align-items-center col-4"><img src="img/product2.jpg" alt="pic"/>
+                    <p class="font-weight-bold">Product Name</p>
+                  </th>
+                  <th class="col-2 text-center">15$</th>
+                  <th class="col-2 text-center"> 
+                    <div class="quantity">
+                      <input type="text" value="1"/>
+                    </div>
+                  </th>
+                  <th class="col-2 text-center"> <a class="btn_style solid_btn" href="#"> <small>Add To Card</small></a></th>
+                  <th class="col-2 text-right"> <a href="#"><i class="fas fa-trash-alt"></i> </a></th>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center margin_top"><a class="btn_style dark_btn mr-3 d-inline-flex align-items-center" href="#"><i class="fas fa-arrow-left mr-2"></i><small>Continue Shopping               </small></a></div>
           </div>
         </section>
-        <section class="aboutUs pb-0">
+        <section class="related pt-0">
           <div class="container">
-            <h2 class="section_tit margin_bottom"><span>About Store</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud commodo consequat sit voluptatem accusantium doloremque laudantium.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </section>
-        <section class="services">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/delivery.png" alt="pic"/>
-                  <h3 class="font-weight-bold">Free Delivery</h3>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/refun.png" alt="pic"/>
-                  <h3 class="font-weight-bold">40 Days Return</h3>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/return.png" alt="pic"/>
-                  <h3 class="font-weight-bold">Free Returns</h3>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="serv_item"><img src="img/support.png" alt="alt"/>
-                  <h3 class="font-weight-bold">24 Hours Support</h3>
-                </div>
-              </div>
+            <h3 class="_bold section_tit margin_bottom_4"><span>YOU MAY BE INTERESTED</span></h3>
+            <div class="productsSlider owl-carousel pl-0 pr-0">
+              <div class="product"><a href="#">
+                  <div class="img"><img src="img/product1.jpg" alt="pic"/></div>
+                  <div class="new">New</div>
+                  <h3>Product Name</h3>
+                  <p>30$</p><a class="wish_list animated" href="#"><i class="far fa-heart"></i></a></a></div>
+              <div class="product"><a href="#">
+                  <div class="img"><img src="img/product2.jpg" alt="pic"/></div>
+                  <h3>Product Name</h3>
+                  <p>30$</p><a class="wish_list animated" href="#"><i class="far fa-heart"></i></a></a></div>
+              <div class="product"><a href="#">
+                  <div class="img"><img src="img/product3.jpg" alt="pic"/></div>
+                  <div class="sale">-20%</div>
+                  <h3>Product Name</h3>
+                  <p>20$ <small class="old">30$</small></p><a class="wish_list animated" href="#"><i class="far fa-heart"></i></a></a></div>
+              <div class="product"><a href="#">
+                  <div class="img"><img src="img/product4.jpg" alt="pic"/></div>
+                  <h3>Product Name</h3>
+                  <p>30$</p><a class="wish_list animated" href="#"><i class="far fa-heart"></i></a></a></div>
+              <div class="product"><a href="#">
+                  <div class="img"><img src="img/product5.jpg" alt="pic"/></div>
+                  <h3>Product Name</h3>
+                  <p>30$</p><a class="wish_list animated" href="#"><i class="far fa-heart"></i></a></a></div>
+              <div class="product"><a href="#">
+                  <div class="img"><img src="img/product6.jpg" alt="pic"/></div>
+                  <h3>Product Name</h3>
+                  <p>30$</p><a class="wish_list animated" href="#"><i class="far fa-heart"></i></a></a></div>
             </div>
           </div>
         </section>
