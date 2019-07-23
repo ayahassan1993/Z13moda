@@ -25,6 +25,9 @@ $(document).ready(function() {
 							items: 3,
 					},
 					767:{
+						items: 4,
+					},
+					991:{
 						items: 5,
 					}
 				}
@@ -137,10 +140,10 @@ $(document).ready(function() {
 			scrollTop: $($target).position().top
 		},1000);
 		$('.navbar-collapse').removeClass('show');
-		$('.navbar-toggler svg').toggleClass('fa-times').toggleClass('fa-align-right');
+		$('.navbar-toggler svg').toggleClass('fa-times').toggleClass('fa-bars');
 	});
 	$('.navbar-toggler').on('click',function(){
-		$('.navbar-toggler svg').toggleClass('fa-times').toggleClass('fa-align-right');
+		$('.navbar-toggler svg').toggleClass('fa-times').toggleClass('fa-bars');
 	});
 // ====== wish list =============
 $('.product .wish_list').on('click',function(e){
@@ -155,7 +158,7 @@ $('.product .wish_list').on('click',function(e){
 			$(this).find('svg').attr('data-prefix','far');
 		}
 	$(this).toggleClass('bounceIn');
-})
+});
 
 		// ======rate===========
 		(function($) {

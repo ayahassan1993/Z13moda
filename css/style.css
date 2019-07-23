@@ -268,6 +268,11 @@ section {
   font-family: "Conv_Quicksand-Bold";
 }
 
+.border-bottom {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
 .section_tit span {
   position: relative;
   padding-bottom: 1rem;
@@ -294,6 +299,7 @@ section {
 .btn_style {
   padding: .5rem 2rem;
   display: inline-block;
+  text-align: center;
   font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -956,8 +962,7 @@ section {
 }
 
 .checkout .modal-dialog {
-  max-width: 300px;
-  margin-right: 0;
+  margin: 0 auto;
 }
 
 /* === Help === */
@@ -1144,13 +1149,96 @@ section {
   color: #fff;
 }
 
+.site_footer .bottom_footer .row {
+  margin: 0;
+}
+
 .site_footer .bottom_footer .social-link {
   color: #fff;
   font-size: 18px;
 }
 
+@media (max-width: 991px) {
+  .site_header .bottom_header .dropdown .dropdown-menu {
+    border: 0;
+  }
+  .site_header .bottom_header .dropdown .dropdown-menu .col-md-0 {
+    display: none;
+  }
+  aside {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .categories .cat_item h2 {
+    font-size: 1rem;
+    margin: .5rem;
+  }
+  .sale_section img {
+    margin-bottom: 2rem;
+  }
+  .singleProduct-slider {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .ourStory::after {
+    top: 14%;
+    height: 49%;
+  }
+  .serv_item {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .categories .cat_item h2 {
+    font-size: .8rem;
+    margin: .3rem;
+  }
+}
+
 @media (max-width: 575px) {
   html {
     font-size: 12px;
+  }
+  .top_header .d-flex {
+    justify-content: center !important;
+  }
+  .top_header .top_social_links {
+    margin-top: 1rem;
+  }
+  .site_footer .bottom_footer .social-link {
+    font-size: 14px;
+  }
+  .checkout .input-row input, .checkout .input-row select {
+    padding-left: 3.5rem;
+  }
+  .contactUs .col-sm-5 {
+    display: none;
+  }
+  .site_header .bottom_header {
+    font-size: 12px;
+  }
+  .site_header .bottom_header .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+  }
+  .categories .cat_item {
+    position: relative;
+    margin: 0 auto 2rem;
+    max-width: 200px;
+  }
+  .categories .cat_item h2 {
+    font-size: 1.3rem;
+    margin: .6rem;
+  }
+  .mybag .table tr th:nth-child(4) {
+    display: none;
+  }
+  .myprofile .col-sm-3 {
+    margin-bottom: 2rem;
+  }
+  .product_page .product_body .form-group label {
+    line-height: 31px;
   }
 }
